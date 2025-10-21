@@ -4,8 +4,8 @@ app = FastAPI()
 
 @app.get("/goodPayment")
 def success():
-    return ("status": "200")
+    return {"status": "200"}
 
 @app.get("/badPayment")
 def success():
-    return ("status": "400")
+    return {"status": "400"}
